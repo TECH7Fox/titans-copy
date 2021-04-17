@@ -1,0 +1,294 @@
+fileFormatVersion: 2
+guid: ab8eab28ba42f9d4381d9e689b38c500
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6905922259874023411
+    second: uipack_rpg_sheet_0
+  - first:
+      213: 1948117334319197221
+    second: uipack_rpg_sheet_1
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: uipack_rpg_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 463
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 10, y: 10, z: 10, w: 10}
+      outline:
+      - - {x: -3, y: 156}
+        - {x: -3, y: 256}
+        - {x: 97, y: 256}
+        - {x: 97, y: 156}
+      - - {x: 146, y: 219}
+        - {x: 142, y: 255}
+        - {x: 177, y: 256}
+        - {x: 177, y: 219}
+      - - {x: -193, y: 207}
+        - {x: -193, y: 256}
+        - {x: -3, y: 256}
+        - {x: -3, y: 207}
+      - - {x: 145, y: -130}
+        - {x: 145, y: -112}
+        - {x: 163, y: -112}
+        - {x: 163, y: -130}
+      - - {x: 163, y: -130}
+        - {x: 163, y: -112}
+        - {x: 181, y: -112}
+        - {x: 181, y: -130}
+      - - {x: 163, y: -148}
+        - {x: 163, y: -130}
+        - {x: 181, y: -130}
+        - {x: 181, y: -148}
+      - - {x: 163, y: -157}
+        - {x: 163, y: -148}
+        - {x: 181, y: -148}
+        - {x: 181, y: -157}
+      - - {x: 163, y: -175}
+        - {x: 163, y: -157}
+        - {x: 181, y: -157}
+        - {x: 181, y: -175}
+      - - {x: 145, y: -184}
+        - {x: 145, y: -166}
+        - {x: 163, y: -166}
+        - {x: 163, y: -184}
+      - - {x: 163, y: -193}
+        - {x: 163, y: -175}
+        - {x: 181, y: -175}
+        - {x: 181, y: -193}
+      - - {x: 145, y: -210}
+        - {x: 145, y: -193}
+        - {x: 163, y: -193}
+        - {x: 163, y: -210}
+      - - {x: 145, y: -229}
+        - {x: 145, y: -220}
+        - {x: 163, y: -220}
+        - {x: 163, y: -229}
+      - - {x: 154, y: -247}
+        - {x: 154, y: -229}
+        - {x: 172, y: -229}
+        - {x: 172, y: -247}
+      - - {x: 154, y: -256}
+        - {x: 154, y: -247}
+        - {x: 172, y: -247}
+        - {x: 172, y: -256}
+      - - {x: 100, y: -230}
+        - {x: 100, y: -181}
+        - {x: 145, y: -181}
+        - {x: 145, y: -230}
+      - - {x: -22, y: -229}
+        - {x: -22, y: -220}
+        - {x: -4, y: -220}
+        - {x: -4, y: -229}
+      - - {x: -3, y: -110}
+        - {x: -3, y: -92}
+        - {x: 6, y: -92}
+        - {x: 6, y: -110}
+      - - {x: -3, y: -92}
+        - {x: -3, y: -74}
+        - {x: 6, y: -74}
+        - {x: 6, y: -92}
+      - - {x: -3, y: -74}
+        - {x: -3, y: -56}
+        - {x: 6, y: -56}
+        - {x: 6, y: -74}
+      - - {x: 115, y: 58}
+        - {x: 115, y: 67}
+        - {x: 133, y: 67}
+        - {x: 133, y: 58}
+      - - {x: 133, y: 58}
+        - {x: 133, y: 67}
+        - {x: 151, y: 67}
+        - {x: 151, y: 58}
+      - - {x: 151, y: 58}
+        - {x: 151, y: 67}
+        - {x: 169, y: 67}
+        - {x: 169, y: 58}
+      - - {x: 177, y: 112}
+        - {x: 177, y: 130}
+        - {x: 186, y: 130}
+        - {x: 186, y: 112}
+      - - {x: 177, y: 148}
+        - {x: 177, y: 166}
+        - {x: 186, y: 166}
+        - {x: 186, y: 148}
+      - - {x: 177, y: 130}
+        - {x: 177, y: 148}
+        - {x: 186, y: 148}
+        - {x: 186, y: 130}
+      - - {x: -193, y: 19}
+        - {x: -193, y: 67}
+        - {x: -3, y: 67}
+        - {x: -3, y: 19}
+      - - {x: -193, y: 158}
+        - {x: -193, y: 207}
+        - {x: -3, y: 207}
+        - {x: -3, y: 158}
+      physicsShape:
+      - - {x: 96, y: 207}
+        - {x: 96, y: 256}
+        - {x: 141, y: 256}
+        - {x: 141, y: 207}
+      - - {x: 99, y: -230}
+        - {x: 99, y: -181}
+        - {x: 144, y: -181}
+        - {x: 144, y: -230}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d08feb53b4c3920a0800000000000000
+      internalID: -6905922259874023411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uipack_rpg_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 26
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 10, y: 10, z: 10, w: 10}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52c60ecd46a190b10800000000000000
+      internalID: 1948117334319197221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: b5f80d8098cf66b4685ba9ad18abaf3f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,170 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Planet Material
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: _GLOSSYREFLECTIONS_OFF
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AlphaClip: 0
+    - _Blend: 0
+    - _BumpScale: 1
+    - _Cull: 2
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _EnvironmentReflections: 1
+    - _FlatColBlend: 0
+    - _FlatColBlendNoise: 0
+    - _FlatToSteepBlend: 0.1832
+    - _FlatToSteepNoise: 0.0828
+    - _FresnelPow: 2
+    - _FresnelStrengthFar: 5
+    - _FresnelStrengthNear: 2.5
+    - _GlossMapScale: 0
+    - _Glossiness: 0
+    - _GlossyReflections: 0
+    - _HeightMax: 1
+    - _HeightMin: -0.13
+    - _MaxFlatHeight: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _NoiseScale: 10.27
+    - _NoiseScale2: 50
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _QueueOffset: 0
+    - _ReceiveShadows: 1
+    - _ShoreBlend: 0.0547
+    - _ShoreHeight: 0.079
+    - _Smoothness: 0.5
+    - _SmoothnessTextureChannel: 0
+    - _SnowBlend: 0.1145
+    - _SnowHighlight: 1.232
+    - _SnowLongitude: 0.611
+    - _SnowNoiseA: 5.88
+    - _SnowNoiseB: 6.16
+    - _SnowSpecular: 0.815
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _SteepBandStrength: 0.063
+    - _SteepBands: 11.47
+    - _SteepnessThreshold: 0.532
+    - _Surface: 0
+    - _UVSec: 0
+    - _UseSnowyPoles: 0
+    - _WorkflowMode: 1
+    - _ZWrite: 1
+    - _mountainColor: 0.5
+    m_Colors:
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.93631357, g: 0.9622642, b: 0.44028127, a: 0}
+    - _ColorGradient: {r: 0, g: 0, b: 0, a: 1}
+    - _ColorMax: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorMin: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FlatHighA: {r: 0.34010246, g: 0.6698113, b: 0.13585795, a: 1}
+    - _FlatHighB: {r: 0.2958078, g: 0.5754717, b: 0.06786222, a: 1}
+    - _FlatLowA: {r: 0.27144888, g: 0.9433962, b: 0.30771634, a: 1}
+    - _FlatLowB: {r: 0.5134865, g: 0.9339623, b: 0.2863564, a: 1}
+    - _FresnelCol: {r: 0.96470594, g: 1, b: 0.57254905, a: 1}
+    - _ShoreHigh: {r: 0.8825507, g: 0.8962264, b: 0.5030705, a: 1}
+    - _ShoreLow: {r: 0.96588945, g: 1, b: 0.4481132, a: 1}
+    - _SnowCol: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+    - _SteepHigh: {r: 0.868885, g: 1, b: 0.5330188, a: 1}
+    - _SteepLow: {r: 0.3679245, g: 0.24919169, b: 0.17528479, a: 1}
+    - _TestParams: {r: 22.9, g: 3.84, b: 114.13, a: -67.13}
+    - _elevationMinMax: {r: 53.5, g: 73.4615, b: 0, a: 0}
+  m_BuildTextureStacks: []
+--- !u!114 &4560503529097575062
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 2
