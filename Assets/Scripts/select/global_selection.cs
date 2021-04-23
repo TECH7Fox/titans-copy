@@ -50,22 +50,22 @@ public class global_selection : MonoBehaviour
                 // hit.transform.gameObject.GetComponent<Outline>().enabled = true;
                 foreach(GameObject unit in selected_table.selectedTable.Values)
                 {
-                    if (unit.tag == "Building")
+                    if (unit.CompareTag("Building"))
                         continue;
-                    unit.GetComponent<EntityController>().setResourceTarget(hit.transform.gameObject);
+                    unit.GetComponent<Unit>().setResourceTarget(hit.transform.gameObject);
                 }
             }
             else if (Physics.Raycast(ray, out hit, 1000))
             {
                 foreach(GameObject unit in selected_table.selectedTable.Values)
                 {
-                    if (unit.tag == "Building") // MABY HAVE SEPRATE RAYCAST FOR BUILDINGS? // MABY HAVE A SEPRATE TABLE FOR BUILDINGS??
+                    if (unit.CompareTag("Building")) // MABY HAVE SEPRATE RAYCAST FOR BUILDINGS? // MABY HAVE A SEPRATE TABLE FOR BUILDINGS?? NO
                     {
                         unit.GetComponent<Building>().setTargetPosition(hit.point, 1);
                         continue;
                     }   
-                    unit.GetComponent<EntityController>().setResourceNull();
-                    unit.GetComponent<EntityController>().setTargetPosition(hit.point, 1);
+                    unit.GetComponent<Unit>().setResourceNull();
+                    unit.GetComponent<Unit>().setTargetPosition(hit.point, 1);
                 }
             }
         }

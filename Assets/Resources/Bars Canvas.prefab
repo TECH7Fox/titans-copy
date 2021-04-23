@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1421686910394623790}
   - component: {fileID: 6356651566453479036}
   - component: {fileID: 8528084652299682748}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Mask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 663985367132667565}
   - component: {fileID: 1013439079554472083}
   - component: {fileID: 920672104046952389}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Health Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 5609501095760186594}
   - component: {fileID: 4144209438240542524}
   - component: {fileID: 8928551588819456414}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ GameObject:
   - component: {fileID: 4175139723236353977}
   - component: {fileID: 6113787654715181988}
   - component: {fileID: 9091715985797000727}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Mask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -342,7 +342,7 @@ GameObject:
   - component: {fileID: 867453728530671919}
   - component: {fileID: 1466039553028950378}
   - component: {fileID: 160234841158837252}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Progress Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -420,7 +420,7 @@ GameObject:
   - component: {fileID: 6601358252753343260}
   - component: {fileID: 5524064969010385229}
   - component: {fileID: 7803340924884081564}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Bars Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -545,7 +545,7 @@ GameObject:
   - component: {fileID: 2007941544107047496}
   - component: {fileID: 1577917171255019238}
   - component: {fileID: 7723635239718721475}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}

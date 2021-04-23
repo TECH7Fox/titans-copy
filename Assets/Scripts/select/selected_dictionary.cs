@@ -19,9 +19,12 @@ public class selected_dictionary : MonoBehaviour
     }
 
     public void deselect(int id)
-    {
-        Destroy(selectedTable[id].GetComponent<selection_component>());
-        selectedTable.Remove(id);
+    {   
+        if (selectedTable.ContainsKey(id))
+        {
+            Destroy(selectedTable[id].GetComponent<selection_component>());
+            selectedTable.Remove(id);
+        }
     }
 
     public void deselectAll()

@@ -3,20 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum EntityType
-{
-    Unit,
-    Building
-}
-
 public class selection_component : MonoBehaviour
 {
     private Outline outline;
     private GameObject canvas;
 
-    public float progress = 0f;
-    
     private Image progressBar;
+    private Image healthBar;
 
     public GameObject barsCanvas;
 
@@ -29,25 +22,20 @@ public class selection_component : MonoBehaviour
         outline.OutlineMode = Outline.Mode.OutlineVisible;
         outline.OutlineWidth = 5f; 
 
-        if (gameObject.tag == "Building")
-        {
-            outline.OutlineColor = GetComponent<Building>().player.color;
-        }
-        else
-        {
-            outline.OutlineColor = GetComponent<EntityController>().player.color; // FIX THIS SHIT WITH BASE CLASS FOR ENTITY'S (BUILDINGS AND UNITS)
-        } // CAN OVERRIDE CERTAIN FUNCTIONS OF ENTITY CLASS (MOVE, SET TARGET ETC.)
+        outline.OutlineColor = GetComponent<Entity>().player.color;
 
         canvas = Instantiate(barsCanvas);
         canvas.transform.SetParent(transform);
-        canvas.transform.position = this.transform.position + transform.up * 2;
+        canvas.transform.position = transform.position + transform.up * 2;
         progressBar = canvas.transform.Find("Progress Bar/Mask/Fill").gameObject.GetComponent<Image>();
+        healthBar = canvas.transform.Find("Health Bar/Mask/Fill").gameObject.GetComponent<Image>();
     }
 
     private void Update()
     {
         canvas.transform.forward = Camera.main.transform.forward;
-        progressBar.fillAmount = progress;
+        progressBar.fillAmount = GetComponent<Entity>().progress / 100;
+        healthBar.fillAmount = GetComponent<Entity>().health / 100;
     }
 
     private void OnDestroy()
