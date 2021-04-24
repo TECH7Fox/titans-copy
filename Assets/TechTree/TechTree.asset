@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7919107561941446089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 783ad440b2bf60042a66102f7741f311, type: 3}
+  m_Name: Tech Tree
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 104, y: 40}
+  ports:
+    keys:
+    - parent
+    - childeren
+    values:
+    - _fieldName: parent
+      _node: {fileID: -7919107561941446089}
+      _typeQualifiedName: TechTreeNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: childeren
+        node: {fileID: 1430186496018832423}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: childeren
+      _node: {fileID: -7919107561941446089}
+      _typeQualifiedName: TechTreeNode[], Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  title: something else 3
+  description: cool3
+  image: {fileID: 0}
+  cost: 3
+  tier: 1
+  parent: {fileID: 0}
+  childeren: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b683dcaa8bfffb7429943917d19b2e45, type: 3}
+  m_Name: TechTree
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 1430186496018832423}
+  - {fileID: 4628506511283216814}
+  - {fileID: -7919107561941446089}
+--- !u!114 &1430186496018832423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 783ad440b2bf60042a66102f7741f311, type: 3}
+  m_Name: Tech Tree
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -216, y: -72}
+  ports:
+    keys:
+    - parent
+    - childeren
+    values:
+    - _fieldName: parent
+      _node: {fileID: 1430186496018832423}
+      _typeQualifiedName: TechTreeNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: childeren
+      _node: {fileID: 1430186496018832423}
+      _typeQualifiedName: TechTreeNode[], Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: parent
+        node: {fileID: 4628506511283216814}
+        reroutePoints: []
+      - fieldName: parent
+        node: {fileID: -7919107561941446089}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  title: something
+  description: cool
+  image: {fileID: 0}
+  cost: 1
+  tier: 0
+  parent: {fileID: 0}
+  childeren: []
+--- !u!114 &4628506511283216814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 783ad440b2bf60042a66102f7741f311, type: 3}
+  m_Name: Tech Tree
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 104, y: -152}
+  ports:
+    keys:
+    - parent
+    - childeren
+    values:
+    - _fieldName: parent
+      _node: {fileID: 4628506511283216814}
+      _typeQualifiedName: TechTreeNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: childeren
+        node: {fileID: 1430186496018832423}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: childeren
+      _node: {fileID: 4628506511283216814}
+      _typeQualifiedName: TechTreeNode[], Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  title: something else 1
+  description: cool2
+  image: {fileID: 0}
+  cost: 2
+  tier: 1
+  parent: {fileID: 0}
+  childeren: []
