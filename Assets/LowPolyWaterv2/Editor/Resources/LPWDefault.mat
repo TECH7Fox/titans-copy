@@ -9,8 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: LPWDefault
   m_Shader: {fileID: 4800000, guid: 8165be4dd0b12774d80426d906df9c38, type: 3}
-  m_ShaderKeywords: LPW_FOAM _CUSTOM_SHAPE _EDGEBLEND_ON _LIGHTABS_ON _POINTLIGHTS_ON
-    _SHADING_FLAT _WAVES_LOWQUALITY
+  m_ShaderKeywords: LPW_FOAM _CULL_ON _CUSTOM_SHAPE _EDGEBLEND_ON _LIGHTABS_ON _SHADING_FLAT
+    _WAVES_LOWQUALITY _ZWRITE_ON
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -41,12 +41,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Absorption: 1.1
+    - _Absorption: 4.4
     - _BumpScale: 35
     - _BumpScale_: 35
     - _BumpSpeed: 0.2
-    - _Cull: 0
-    - _Cull_: 2
+    - _Cull: 1
+    - _Cull_: 0
     - _Diffuse: 0.31
     - _Direction: 180
     - _Distort: 0
@@ -56,15 +56,15 @@ Material:
     - _FoamScale: 12.37
     - _FoamSpeed: 0.3
     - _FoamSpread: 1
-    - _FresPower: 0.44
+    - _FresPower: 1.05
     - _HQFoam: 0
     - _Height: 0.28
     - _Height_: 0.28
     - _Length: 0.57
     - _LightAbs: 1
     - _NormalOffset: 1
-    - _Opacity: 0.102
-    - _PointLights: 1
+    - _Opacity: 0.559
+    - _PointLights: 0
     - _RHeight: 0.09
     - _RHeight_: 0.09
     - _RSpeed: 1.22
@@ -77,10 +77,10 @@ Material:
     - _Shadow: 0.7
     - _ShoreDistance: 0.13
     - _ShoreIntensity: 0.16
-    - _Specular: 99
+    - _Specular: 89
     - _Speed: 0.63
     - _Speed_: 0.63
-    - _Steepness: 0.08
+    - _Steepness: 0.208
     - _Stretch: 0.18
     - _TexSize_: 64
     - _Time_: 0
@@ -90,7 +90,7 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 0.5, b: 0.7, a: 1}
     - _DeepColor: {r: 0, g: 0.2053342, b: 0.4056604, a: 1}
-    - _Direction_: {r: -1, g: -0.00000008742278, b: -0.045599997, a: -0.0000000039864783}
+    - _Direction_: {r: -1, g: -0.00000008742278, b: -0.11856, a: -0.000000010364844}
     - _FresColor: {r: 0.305, g: 0.371, b: 0.395, a: 1}
     - _ShoreColor: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 0.703, g: 0.676, b: 0.438, a: 1}
