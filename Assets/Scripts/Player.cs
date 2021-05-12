@@ -5,21 +5,45 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    public Dictionary<string, int> unlocked;
+    public string currentResearch;
+
     public int Wood;
     public int Stone;
     public int Metal;
+    public int research;
+
     public Color color;
 
     public Text WoodLabel;
     public Text StoneLabel;
     public Text MetalLabel;
+    //public Text researchLabel;
+
+    private void Awake()
+    {
+        unlocked.Add("tower", 0);
+        unlocked.Add("factory", 0);
+        unlocked.Add("cannon", 0);
+    }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
+        research += 1; //test
+
         WoodLabel.text = "Wood: " + Wood;
         StoneLabel.text = "Stone: " + Stone;
         MetalLabel.text = "Metal: " + Metal;
+
+        if (string.IsNullOrEmpty(currentResearch))
+        {
+            if (research > 0)
+            {
+                unlocked[currentResearch] += 1;
+                research -= 1;
+            }
+        }
     }
 
     public void AddResource(ResourceType resource, int amount)
