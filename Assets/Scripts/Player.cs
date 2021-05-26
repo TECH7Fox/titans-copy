@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    public Dictionary<string, int> unlocked;
+    public Dictionary<string, int> unlocked = new Dictionary<string, int>();
     public string currentResearch;
-
+    
     public int Wood;
     public int Stone;
     public int Metal;
-    public int research;
+    public int research = 100;
 
     public Color color;
 
@@ -30,15 +30,15 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        research += 1; //test
+        //research += 1; //test
 
         WoodLabel.text = "Wood: " + Wood;
         StoneLabel.text = "Stone: " + Stone;
         MetalLabel.text = "Metal: " + Metal;
 
-        if (string.IsNullOrEmpty(currentResearch))
+        if (!string.IsNullOrEmpty(currentResearch))
         {
-            if (research > 0)
+            if (unlocked[currentResearch] < 100 && research > 0)
             {
                 unlocked[currentResearch] += 1;
                 research -= 1;

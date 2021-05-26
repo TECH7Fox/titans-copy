@@ -20,13 +20,15 @@ public class techTreeButton : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        Debug.Log("RESEARCH: " + player.research);
-
         if (mouseover)
             transform.Find("Info").transform.position = new Vector2(transform.Find("Info").transform.position.x, Input.mousePosition.y - 63);
 
         if (player.currentResearch == researchString)
-            transform.Find("Progress").gameObject.GetComponent<Slider>().value = player.unlocked[researchString] / 100;
+            transform.Find("Progress").gameObject.GetComponent<Slider>().value = player.unlocked[researchString] / 100f;
+
+        if (transform.Find("Progress").gameObject.GetComponent<Slider>().value >= 1)
+            transform.Find("Progress/Fill Area/Fill").gameObject.GetComponent<Image>().color = new Color(0, 100
+                , 255);
     }
 
     public void select()

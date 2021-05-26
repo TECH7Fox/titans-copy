@@ -142,44 +142,67 @@ public class Unit : Entity
             elapsed = 0f;
             GameObject target = checkForEnemy();
             float bulletSpeed = 500f;
-            float angle;
-            Quaternion randomDir = Quaternion.Euler(Random.Range(-10, 10), Random.Range(-10, 10), 0);
+            Quaternion randomDir = Quaternion.Euler(90, 0, 0);
             //Vector3 extraHeight = target.transform.up * (distance / 20);
             //Debug.Log(target.transform.position + extraHeight);                       // PLEASE DO NOT LOOK AT THIS PART. THANK YOU
-            CalculateTrajectory(transform.position, target.transform.position, bulletSpeed, out angle);
-            bulletTransform = Instantiate(bullet, transform.position, randomDir * Quaternion.LookRotation(target.transform.position - transform.position));
+            bulletTransform = Instantiate(bullet, transform.position, Quaternion.LookRotation(target.transform.position - transform.position));
             bulletTransform.GetComponent<Bullet>().Init(player, bulletSpeed, 10f, 1);
+            bulletTransform.transform.LookAt(target.transform.position + (transform.up * Vector3.Distance(target.transform.position, transform.position) / 3));
         }
     }
 
-    public static bool CalculateTrajectory(Vector3 start, Vector3 end, float muzzleVelocity, out float angle)
-    {//, out float highAngle){
+    void CalculateAngleToHitTarget(GameObject target, out float? theta1, out float? theta2)
+    {
+        //Initial speed
+        float v = 10f;
 
-        Vector3 dir = end - start;
-        float vSqr = muzzleVelocity * muzzleVelocity;
-        float y = dir.y;
-        dir.y = 0.0f;
-        float x = dir.sqrMagnitude;
-        float g = -Physics.gravity.y;
+        Vector3 targetVec = target.transform.position - transform.position;
 
-        float uRoot = vSqr * vSqr - g * (g * (x) + (2.0f * y * vSqr));
+        //Vertical distance
+        float y = Vector3.Distance(target.transform.position, new Vector3(0, 0, 0)) - Vector3.Distance(transform.position, new Vector3(0, 0, 0));
+        Debug.Log("Y: " + y);
+
+        //Reset y so we can get the horizontal distance x
+        targetVec.y = 0f;
+
+        //Horizontal distance
+        float x = targetVec.magnitude;
+        
+        Vector3 spokeToActual = transform.position - new Vector3(0, 0, 0),
+         spokeToCorrect = target.transform.position - new Vector3(0, 0, 0);
+        float angleFromCenter = Vector3.Angle(spokeToActual, spokeToCorrect);
+        // NOTE: angle inputs don't need normalize. In degrees(!!)
+
+        //float x = 2 * Mathf.PI * 53.3f * (angleFromCenter / 360);
+        Debug.Log("DISTANCE: " + x);
+
+        //Gravity
+        float g = 10f;
 
 
-        if (uRoot < 0.0f)
+        //Calculate the angles
+
+        float vSqr = v * v;
+
+        float underTheRoot = (vSqr * vSqr) - g * (g * x * x + 2 * y * vSqr);
+
+        //Check if we are within range
+        if (underTheRoot >= 0f)
         {
+            float rightSide = Mathf.Sqrt(underTheRoot);
 
-            //target out of range.
-            angle = -45.0f;
-            //highAngle = -45.0f;
-            return false;
+            float top1 = vSqr + rightSide;
+            float top2 = vSqr - rightSide;
+
+            float bottom = g * x;
+
+            theta1 = Mathf.Atan2(top1, bottom) * Mathf.Rad2Deg;
+            theta2 = Mathf.Atan2(top2, bottom) * Mathf.Rad2Deg;
         }
-
-                float r = Mathf.Sqrt (uRoot);
-                float bottom = g * Mathf.Sqrt (x);
-
-        //angle = -Mathf.Atan2(g * Mathf.Sqrt(x), vSqr + Mathf.Sqrt(uRoot)) * Mathf.Rad2Deg;
-        angle = -Mathf.Atan2 (bottom, vSqr - r) * Mathf.Rad2Deg;
-        return true;
-
+        else
+        {
+            theta1 = null;
+            theta2 = null;
+        }
     }
 }
