@@ -13,6 +13,7 @@ public class Planet : MonoBehaviour {
     public enum FaceRenderMask { All, Top, Bottom, Left, Right, Front, Back };
     public FaceRenderMask faceRenderMask;
 
+
     public ShapeSettings shapeSettings;
     public ColourSettings colourSettings;
 
@@ -31,6 +32,7 @@ public class Planet : MonoBehaviour {
     WaterFace[] waterFaces;
 
     public LayerMask layerMask;
+    public Material waterMaterial;
 
     public GameObject treePrefeb;
     public int treesNumber;
@@ -88,15 +90,12 @@ public class Planet : MonoBehaviour {
                 GameObject meshObj = new GameObject("waterMesh");
                 meshObj.transform.parent = transform;
 
-                meshObj.AddComponent<MeshRenderer>();
+                meshObj.AddComponent<MeshRenderer>().material = waterMaterial;
                 waterMeshFilters[i] = meshObj.AddComponent<MeshFilter>();
                 waterMeshFilters[i].sharedMesh = new Mesh();
             }
 
             waterFaces[i] = new WaterFace(waterMeshFilters[i].sharedMesh, resolution, waterHeight, directions[i]);
-            
-            DestroyImmediate(waterMeshFilters[i].gameObject.GetComponent<LowPolyWaterScript>());
-            waterMeshFilters[i].gameObject.AddComponent<LowPolyWaterScript>();
         }
     }
 
