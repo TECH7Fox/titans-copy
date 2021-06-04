@@ -11,8 +11,8 @@ Material:
   m_Shader: {fileID: -6465566751694194690, guid: 0812131165824c14c912625d709d0b33, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 1
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
@@ -56,6 +56,43 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_1AE1D4CB: 0.133
+    - Vector1_1E58CA3C: 0.24
+    - Vector1_24DAD7F: 0.1
+    - Vector1_39047021: 0.52
+    - Vector1_39222957: 0.76
+    - Vector1_3D495A1F: 0.91
+    - Vector1_489F9EEF: 0.25
+    - Vector1_4B305923: 5.65
+    - Vector1_4F92311A: 1
+    - Vector1_51075417: 0.63
+    - Vector1_5190E028: 0.37
+    - Vector1_5232C9B8: 1
+    - Vector1_5EB91206: 0.56
+    - Vector1_653CAE72: -0.16
+    - Vector1_6DA97D7: 7.7
+    - Vector1_722CB011: 0
+    - Vector1_7FB5584F: 0.06
+    - Vector1_8BF7F1BF: 1
+    - Vector1_905986FC: 1
+    - Vector1_986CF1D2: 14
+    - Vector1_9E5F763C: 1
+    - Vector1_A1CA9554: 0.2
+    - Vector1_A38692A6: 0
+    - Vector1_AD7DFD35: 0
+    - Vector1_B42C4654: 0.97
+    - Vector1_B98A4C60: 0
+    - Vector1_BC8BA90A: 2.12
+    - Vector1_BD72615D: 2.6
+    - Vector1_BF07B4C4: 1.9
+    - Vector1_C6051FE9: 1.67
+    - Vector1_CC89A15C: 1
+    - Vector1_D42CC29E: 2
+    - Vector1_F0FA9185: 6
+    - Vector1_F2029A8E: 0
+    - Vector1_F4A73BA: 0.77
+    - Vector1_F976D8BD: 0.6
+    - Vector1_FABC47E4: 0
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -78,6 +115,12 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
+    - Color_3CACD0BA: {r: 0.24448201, g: 0.48698747, b: 0.7735849, a: 1}
+    - Color_936A8730: {r: 0.1745283, g: 0.9507746, b: 1, a: 1}
+    - Color_D70B9788: {r: 0.15566039, g: 0.94964945, b: 1, a: 1}
+    - Color_E63B4CEF: {r: 0.16509432, g: 0.95021206, b: 1, a: 1}
+    - Vector2_B86025B3: {r: 0.5, g: 1, b: 0, a: 0}
+    - Vector2_D494475D: {r: 0.2, g: 0.2, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

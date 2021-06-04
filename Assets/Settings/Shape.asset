@@ -21,8 +21,8 @@ MonoBehaviour:
       simpleNoiseSettings:
         strength: 0.18
         numLayers: 3
-        baseRoughness: 1.16
-        roughness: 2.48
+        baseRoughness: 0.88
+        roughness: 2.63
         persistence: 0.25
         centre: {x: 0, y: 0, z: 0}
         minValue: 0.1
