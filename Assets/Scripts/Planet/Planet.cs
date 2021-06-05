@@ -44,7 +44,13 @@ public class Planet : MonoBehaviour {
     private GameObject[] instStones;
     private GameObject stones;
 
-	void Initialize()
+
+    private void Start()
+    {
+        GeneratePlanet();
+    }
+
+    void Initialize()
     {
         shapeGenerator.UpdateSettings(shapeSettings);
         colourGenerator.UpdateSettings(colourSettings);
