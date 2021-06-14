@@ -153,7 +153,7 @@ Material:
     - _SteepHigh: {r: 0.868885, g: 1, b: 0.5330188, a: 1}
     - _SteepLow: {r: 0.3679245, g: 0.24919169, b: 0.17528479, a: 1}
     - _TestParams: {r: 22.9, g: 3.84, b: 114.13, a: -67.13}
-    - _elevationMinMax: {r: 53.5, g: 72.9967, b: 0, a: 0}
+    - _elevationMinMax: {r: 60.06, g: 72.9967, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &4560503529097575062
 MonoBehaviour:

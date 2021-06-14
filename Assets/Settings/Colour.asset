@@ -18,7 +18,7 @@ MonoBehaviour:
     biomes:
     - gradient:
         serializedVersion: 2
-        key0: {r: 1, g: 0.9628383, b: 0.5801887, a: 1}
+        key0: {r: 1, g: 0.91588783, b: 0, a: 1}
         key1: {r: 0.04438877, g: 1, b: 0, a: 1}
         key2: {r: 0.350265, g: 0.728428, b: 0.120382175, a: 0}
         key3: {r: 0.5754717, g: 0.5284783, b: 0.20901565, a: 0}
@@ -26,8 +26,8 @@ MonoBehaviour:
         key5: {r: 1, g: 1, b: 1, a: 0}
         key6: {r: 1, g: 1, b: 1, a: 0}
         key7: {r: 1, g: 1, b: 1, a: 0}
-        ctime0: 4048
-        ctime1: 5783
+        ctime0: 3662
+        ctime1: 9059
         ctime2: 26985
         ctime3: 31997
         ctime4: 41827

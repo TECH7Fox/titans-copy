@@ -19,9 +19,9 @@ public class ColourGenerator
         biomeNoiseFilter = NoiseFilterFactory.CreateNoiseFilter(settings.biomeColourSettings.noise);
     }
 
-    public void UpdateElevation(MinMax elevationMinMax)
+    public void UpdateElevation(float waterHeight, MinMax elevationMinMax)
     {
-        settings.planetMaterial.SetVector("_elevationMinMax", new Vector4(elevationMinMax.Min, elevationMinMax.Max));
+        settings.planetMaterial.SetVector("_elevationMinMax", new Vector4(waterHeight, elevationMinMax.Max));
     }
 
     public float BiomePercentFromPoint(Vector3 pointOnUnitSphere)

@@ -13,6 +13,8 @@ public class Planet : MonoBehaviour {
     public enum FaceRenderMask { All, Top, Bottom, Left, Right, Front, Back };
     public FaceRenderMask faceRenderMask;
 
+    public AtmosphereSettings atmosphereSettings;
+    private AtmosphereEffect atmosEffect = new AtmosphereEffect();
 
     public ShapeSettings shapeSettings;
     public ColourSettings colourSettings;
@@ -113,6 +115,15 @@ public class Planet : MonoBehaviour {
         GenerateColours();
         GenerateTrees();
         GenerateStones();
+        //RenderAtmosphere();
+    }
+
+    public void RenderAtmosphere()
+    {
+        atmosEffect.UpdateSettings(transform, shapeSettings.planetRadius, waterHeight, atmosphereSettings);
+        List<Material> materials = new List<Material>();
+        materials.Add(atmosEffect.GetMaterial());
+        CustomPostProcessing.RenderMaterials(RenderTexture.GetTemporary(300, 300), RenderTexture.GetTemporary(300, 300), materials);
     }
 
     public void OnShapeSettingsUpdated()
@@ -212,7 +223,7 @@ public class Planet : MonoBehaviour {
             }
         }
 
-        colourGenerator.UpdateElevation(shapeGenerator.elevationMinMax);
+        colourGenerator.UpdateElevation(waterHeight, shapeGenerator.elevationMinMax);
     }
 
     void GenerateWater()
