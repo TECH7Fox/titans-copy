@@ -9,6 +9,7 @@ public class Building : Entity
 
     public ResourceType resource;
     public int cost;
+    public LayerMask layer;
 
     private bool built = false;
     private bool spawning = false;
@@ -16,6 +17,7 @@ public class Building : Entity
 
     private Vector3 TargetPosition;
     private float TargetRadius;
+    private int colliders;
     
     // Start is called before the first frame update
     public void Built(Player player)
@@ -69,5 +71,35 @@ public class Building : Entity
     {
         TargetPosition = pos;
         TargetRadius = radius;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("COLLING: TRIGGER: " + other.gameObject.layer);
+        if (other.gameObject.layer != layer)
+        {
+            colliders += 1;
+
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.layer != layer)
+        {
+            colliders -= 1;
+        }
+    }
+
+    public bool IsValidPlace()
+    {
+        if (colliders <= 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }

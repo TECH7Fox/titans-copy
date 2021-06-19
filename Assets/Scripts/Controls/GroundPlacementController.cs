@@ -31,6 +31,14 @@ public class GroundPlacementController : MonoBehaviour
             Rotate();
             ReleaseIfClicked();
             CancelIfClicked();
+            if (currentPlaceableObject.GetComponent<Building>().IsValidPlace())
+            {
+                meshRenderer.material = buildableMaterial;
+            }
+            else
+            {
+                meshRenderer.material = nonBuildingMaterial;
+            }
             //overlapbox or checkbox ( get sizes of currentPlaceableObject)
         }
     }
@@ -81,12 +89,15 @@ public class GroundPlacementController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if (player.HasResource(resource, cost))
+            if (currentPlaceableObject.GetComponent<Building>().IsValidPlace())
             {
-                player.RemoveResource(resource, cost);
-                meshRenderer.material = oldMaterial;
-                currentPlaceableObject.GetComponent<Building>().Built(player);
-                currentPlaceableObject = null;
+                if (player.HasResource(resource, cost))
+                {
+                    player.RemoveResource(resource, cost);
+                    meshRenderer.material = oldMaterial;
+                    currentPlaceableObject.GetComponent<Building>().Built(player);
+                    currentPlaceableObject = null;
+                }
             }
         }
     }
