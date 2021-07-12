@@ -64,7 +64,7 @@ Material:
     - Vector1_6FA93CF6: 6.17
     - Vector1_82BF5016: 36.4
     - _AlphaClip: 0
-    - _AtmosphereRadius: 190.82
+    - _AtmosphereRadius: 73.4
     - _Blend: 0
     - _BumpScale: 1
     - _ClipThreshold: 0
@@ -75,18 +75,18 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _LightIntensity: 16
-    - _LightSteps: 75.7
+    - _LightIntensity: 14.1
+    - _LightSteps: 10
     - _Metallic: 0
     - _OcclusionStrength: 1
-    - _PlanetRadius: 60
+    - _PlanetRadius: 73.3
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _Steps: 19.5
+    - _Steps: 10
     - _Surface: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
@@ -95,8 +95,8 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _LightColor: {r: 1, g: 0.9879651, b: 0.8160377, a: 1}
-    - _LightDirection: {r: 3.9, g: -0.03, b: 0.53, a: 1}
-    - _MieScattering: {r: 5.9, g: 0.63, b: 0.88, a: 2.47}
-    - _RayleighScattering: {r: 0.11, g: 0.47, b: 1.9, a: 0.64}
+    - _LightDirection: {r: 3.9, g: 0.06, b: 0.53, a: 1}
+    - _MieScattering: {r: 0.55, g: 0.93, b: 17.41, a: 0.65}
+    - _RayleighScattering: {r: 0.04, g: 0.04, b: 1.26, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_BuildTextureStacks: []

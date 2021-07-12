@@ -170,11 +170,29 @@ public class Planet : MonoBehaviour {
             Physics.Raycast(transform.position + direction, -direction, out RaycastHit hit, 1000, layerMask);
             if (Vector3.Distance(hit.point, transform.position) > waterHeight)
             {
-                instTrees[i] = Instantiate(treePrefeb);
-                instTrees[i].GetComponent<Outline>().enabled = false;
+                instTrees[i] = new GameObject("treeContainer");
+                //instTrees[i].GetComponent<Outline>().enabled = false;
                 instTrees[i].transform.parent = trees.transform;
                 instTrees[i].transform.position = hit.point;
                 instTrees[i].transform.up = hit.normal;
+
+                var tree = Instantiate(treePrefeb);
+                tree.transform.position = instTrees[i].transform.position;
+                tree.transform.up = instTrees[i].transform.up;
+                tree.transform.parent = instTrees[i].transform;
+                tree.GetComponent<Outline>().enabled = false;
+
+                /*
+                instTrees[i] = new GameObject("treeContainer");
+                instTrees[i].transform.parent = trees.transform;
+                instTrees[i].transform.position = hit.point;
+                instTrees[i].transform.up = hit.normal;
+
+                var tree = Instantiate(treePrefeb);
+                tree.transform.parent = instTrees[i].transform;
+                //tree.transform.position = Vector3.zero;
+                tree.GetComponent<Outline>().enabled = false;
+                */
             }
         }
     }
