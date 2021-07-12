@@ -181,6 +181,8 @@ public class Planet : MonoBehaviour {
                 tree.transform.up = hit.normal;
                 tree.transform.parent = instTrees[i].transform;
                 tree.GetComponent<Outline>().enabled = false;
+                var anim = tree.GetComponent<Animator>();
+                anim.Play("Wind", 0, Random.Range(0, anim.GetCurrentAnimatorStateInfo(0).length));
 
                 /*
                 instTrees[i] = new GameObject("treeContainer");
