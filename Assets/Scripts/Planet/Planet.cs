@@ -171,14 +171,14 @@ public class Planet : MonoBehaviour {
             if (Vector3.Distance(hit.point, transform.position) > waterHeight)
             {
                 instTrees[i] = new GameObject("treeContainer");
-                //instTrees[i].GetComponent<Outline>().enabled = false;
                 instTrees[i].transform.parent = trees.transform;
                 instTrees[i].transform.position = hit.point;
+                instTrees[i].transform.Rotate(0.0f, 0.0f, Random.Range(0.0f, 360.0f));
                 instTrees[i].transform.up = hit.normal;
 
                 var tree = Instantiate(treePrefeb);
                 tree.transform.position = instTrees[i].transform.position;
-                tree.transform.up = instTrees[i].transform.up;
+                tree.transform.up = hit.normal;
                 tree.transform.parent = instTrees[i].transform;
                 tree.GetComponent<Outline>().enabled = false;
 
