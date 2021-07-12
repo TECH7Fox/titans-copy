@@ -123,6 +123,7 @@ public class Unit : Entity
             elapsed = 0f;
             if (resource != null)
             {
+                resource.GetComponent<Animator>().SetTrigger("Hit");
                 resource.GetComponent<Resource>().GatherResource(1, player);
             }
             else if (!resource)
