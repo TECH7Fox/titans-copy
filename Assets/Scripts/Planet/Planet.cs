@@ -177,6 +177,7 @@ public class Planet : MonoBehaviour {
                 instTrees[i].transform.up = hit.normal;
 
                 var tree = Instantiate(treePrefeb);
+                tree.name = "tree";
                 tree.transform.position = instTrees[i].transform.position;
                 tree.transform.up = hit.normal;
                 tree.transform.parent = instTrees[i].transform;

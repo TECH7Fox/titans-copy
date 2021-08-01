@@ -21,6 +21,11 @@ public class Resource : MonoBehaviour
         player.AddResource(type, amount);
 
         if (quantity <= 0)
-            Destroy(gameObject);
+            GetComponent<Animator>().SetBool("Fall", true);
+    }
+
+    public void DestroyResource()
+    {
+        Destroy(gameObject);
     }
 }
